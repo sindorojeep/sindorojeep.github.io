@@ -1,324 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>DiengeJeep</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sindoro Jeep</title>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+    <!-- header -->
+    <section class="header">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" class="img-fluid logo" alt="">
+                </a>
+                <a class="navbar-brand fw-bold" href="index.html">SINDORO JEEP</a>
 
-    <!-- Navbar & Hero Start -->
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <a href="" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-truck-monster me-3"></i>DiengeJeep</h1>
-                <!-- <img src="img/logo.png" alt="Logo"> -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Jeep</a>
-                    <a href="wisata.html" class="nav-item nav-link">Wisata</a>
-                    <a href="homestay.html" class="nav-item nav-link">Homestay</a>
-                    <a href="travel.html" class="nav-item nav-link">Travel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-4">
+                            <a class="nav-link active fw-bold text-primary " href="index.html">BERANDA</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link text-dark fw-bold" href="about.html">TENTANG KAMI</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link text-dark fw-bold" href="rooms.html">GALERI JEEP</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link text-dark fw-bold" href="reservation.html">ZONA JEEP</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link text-dark fw-bold" href="contact.html">KONTAK</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
             </div>
         </nav>
-         <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-            <div class="container py-5">
-                <div class="row justify-content-center py-5">
-                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                        <h1 class="display-3 text-white mb-3 animated slideInDown">"Open Trip Jeep Dieng"</h1>
-                        <p class="fs-4 text-white mb-4 animated slideInDown">Paket Wisata & Sewa Jeep Keliling Dieng</p>
-                        
-                    </div>
-                </div>
-            </div>
+    </section>
+    <!-- header -->
+
+    <!-- hero -->
+    <section class="hero">
+        <div class="text-center">
+            <form action="./reservation.html">
+                <button class=" btn btn-primary fw-bold d-inline-block p-2">
+                    SEWA JEEP
+                </button>
+            </form>
         </div>
-    </div>
-    <!-- Navbar & Hero End -->
+    </section>
+
+    <!-- hero -->
 
 
-    <!-- Package Start -->
-    <div class="container-xxl py-5">
+    <!-- about us -->
+    <section class="about py-4">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Sewa Jeep</h6>
-                <h1 class="mb-5">Paket Wisata Jeep</h1>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/dj.png" alt="">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-truck-monster text-primary me-2"></i>JEEP</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-gas-pump text-primary me-2"></i>BBM</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-parking text-primary me-2"></i>PARKIR</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>DRIVER</small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h6 class="section-title bg-white text-center text-primary px-3">PAKET ZONA 1</h6>
-                            <h3 class="mb-0">Rp 600.000</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>CANDI ARJUNA</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>KAWAH SIKIDANG</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>BATU RATAPAN ANGIN</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>DIENG THEATER</small></p>
-                                
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center">
+                <h4>
+                    <a href="about.html" class="text-uppercase text-dark text-decoration-none ls-3 text-muted">
+                        SINDORO JEEP
+                    </a>
+                </h4>
 
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/dj.png" alt="">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-truck-monster text-primary me-2"></i>JEEP</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-gas-pump text-primary me-2"></i>BBM</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-parking text-primary me-2"></i>PARKIR</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>DRIVER</small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h6 class="section-title bg-white text-center text-primary px-3">PAKET ZONA 2</h6>
-                            <h3 class="mb-0">Rp 750.000</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>TELAGA SIDRINGO</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>KAWAH CANDRADIMUKA</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>SUMUR JALATUNDA</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>TOL KAHYANGAN</small></p>
-                                
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/dj.png" alt="">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-truck-monster text-primary me-2"></i>JEEP</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-gas-pump text-primary me-2"></i>BBM</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-parking text-primary me-2"></i>PARKIR</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>DRIVER</small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h6 class="section-title bg-white text-center text-primary px-3">PAKET ZONA 3</h6>
-                            <h3 class="mb-0">Rp 900.000</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>CURUG SIKARIM</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>SWISS VAN JAVA</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>TELAGA MENJER</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>TEH PANAMA</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>PINTU LANGIT</small></p>
-                                
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/dj.png" alt="">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-truck-monster text-primary me-2"></i>JEEP</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-gas-pump text-primary me-2"></i>BBM</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-parking text-primary me-2"></i>PARKIR</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>DRIVER</small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h6 class="section-title bg-white text-center text-primary px-3">PAKET ZONA 4</h6>
-                            <h3 class="mb-0">Rp 650.000</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>DE'SIKATOK</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>KAMPOENG ATAS AWAN</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>JUMPRIT WAPIT</small></p>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>SITUS LIYANGAN</small></p>
-                                
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/dj.png" alt="">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-truck-monster text-primary me-2"></i>JEEP</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-gas-pump text-primary me-2"></i>BBM</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-parking text-primary me-2"></i>PARKIR</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>DRIVER</small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h6 class="section-title bg-white text-center text-primary px-3">PAKET ZONA LENGKAP</h6>
-                            <h3 class="mb-0">Rp 1.500.000</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>PAKET LENGKAP DIENG</small></p>
-                                
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/dj.png" alt="">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-truck-monster text-primary me-2"></i>JEEP</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-gas-pump text-primary me-2"></i>BBM</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-parking text-primary me-2"></i>PARKIR</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>DRIVER</small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h6 class="section-title bg-white text-center text-primary px-3">PAKET ZONA KEBUN TEH</h6>
-                            <h3 class="mb-0">Rp 250.000</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                                <p> <small class="flex-fill text-center  py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>DE'SIKATOK</small></p>
-                                
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p class="lead">
+                    Kami Menyediakan Informasi, Panduan, dan Layanan Pemesanan Untuk Perjalanan dan Petualangan Keliling
+                    Area Wisata Wilayah Dieng Menggunakan Kendaraan Jeep.
+                </p>
             </div>
         </div>
-    </div>
-    <!-- Package End -->
+    </section>
+    <!-- about us -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="text-light"><i class="fa fa-copyright me-2"></i>DiengeJeep || Lues Project.</small>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-whatsapp fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>   
-                </div>
-            </div>
+    <!-- footer -->
+    <footer class="bg-dark text-center text-white">
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=61566658019006"
+            role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/sindorojeep/profilecard/?igsh=MWl6YjBmdjl1eTl0eQ=="
+            role="button"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1"
+            href="https://wa.me/6282221384072/?text=Saya ingin informasi mengenai reservasi Sindoro Jeep Terbaru. Terima kasih."
+            role="button"><i class="fab fa-whatsapp"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1"
+            href="https://www.tiktok.com/@sindorojeep?_t=8qiplGYNi30&_r=1" role="button"><i
+                class="fab fa-tiktok"></i></a>
+        <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="index.html">Sindoro Jeep</a>
         </div>
-    </div>
-    <!-- Footer End -->
+    </footer>
+    <!-- footer -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
